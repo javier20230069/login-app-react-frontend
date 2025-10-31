@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  /* Un fondo gris claro para que la "tarjeta" blanca del formulario resalte */
+  background-color: #f0f2f5; 
+}
