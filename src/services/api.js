@@ -1,14 +1,11 @@
 import axios from 'axios';
 
-// Creamos una instancia de axios pre-configurada
-const api = axios.create({
-  // Esta es la URL de tu backend
-  baseURL: 'http://localhost:5000/api' 
-});
+// ¡INGRESA AQUÍ EL URL REAL DE TU BACKEND EN VERCEL!
+// DEBE VERSE ASÍ: 'https://nombre-de-tu-api.vercel.app/api'
+const API_BASE_URL = 'https://TU-API-DE-VERCEL.vercel.app/api'; 
 
-/*
-  (Más adelante, aquí también pondremos la lógica para
-  adjuntar el token de autenticación a todas las peticiones)
-*/
+const api = axios.create({
+  baseURL: API_BASE_URL
+});
 
 export default api;
